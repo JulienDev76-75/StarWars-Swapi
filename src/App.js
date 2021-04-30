@@ -2,8 +2,8 @@ import './App.css';
 import Header from './component/layout/Header';
 import Footer from './component/layout/Footer';
 import Nav from './component/layout/Nav';
-//import Search from './component/search/Search';
-import Home from './component/accueil/Home';
+import Home from './pages/Home';
+import Search from './pages/Search';
 import React from "react";
 
 import {
@@ -14,14 +14,22 @@ import {
 
 function App() {
   return (
-    <div>
+      <div>     
+        <div style={{ 
+          backgroundImage: `url(${process.env.PUBLIC_URL + './img/starwars2.jpg'})`,
+          backgroundRepeat: 'no-repeat',
+        }}> 
+      </div>
       <Header />
       <Router>
         <Nav />
         <main className="container my-5">
           <Switch>
-            <Route path="/accueil">
+            <Route path="/star">
               <Home />
+            </Route>
+            <Route path="/search">
+              <Search />
             </Route>
             <Route path="/">
               <Home />

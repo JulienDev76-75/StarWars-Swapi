@@ -1,14 +1,14 @@
-// On utilise le composant Link du router
 import {Link} from "react-router-dom";
+
 function Nav() {
     return (
-        <nav className="bg-secondary">
+        <nav className="bg-secondary" >
             <ul className="nav">
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="/shopping">Ma liste</Link>
+                    <Link className="nav-link text-white" to="/accueil">Star Wars</Link>
                 </li>
                 <li className="nav-item">
-                    <Link className="nav-link text-white" to="/profil">Mon profil</Link>
+                    <Link className="nav-link text-white" to="/search">Rechercher</Link>
                 </li>
             </ul>
         </nav>

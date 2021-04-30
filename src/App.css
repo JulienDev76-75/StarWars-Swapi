@@ -36,3 +36,11 @@
     transform: rotate(360deg);
   }
 }
+
+#root
+{
+    background-image: url(./img/starwarsfond.png);
+    background-repeat: no-repeat;
+}
+
+

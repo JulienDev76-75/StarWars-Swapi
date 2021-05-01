@@ -2,8 +2,8 @@ import './App.css';
 import Header from './component/layout/Header';
 import Footer from './component/layout/Footer';
 import Nav from './component/layout/Nav';
-import Home from './pages/Home';
-import Search from './pages/Search';
+import Home from './pages/home/Home';
+import Search from './pages/search/Search';
 import React from "react";
 
 import {
